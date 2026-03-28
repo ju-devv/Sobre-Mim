@@ -1,0 +1,117 @@
+/* Estilo inspirado em biografia • atmosfera elegante e narrativa */
+
+* {
+    box-sizing: border-box; /* Faz padding/border ser incluído no width/height final */
+}
+
+body {
+    margin: 0; /* Remove margem padrão do navegador */
+    padding: 30px; /* Espaçamento interno para a página */
+    background: linear-gradient(135deg, #fdf0e7de, #f4f1ed); /* Fundo degradê suave */
+    color: #333; /* Cor base do texto */
+    font-family: "Georgia", "Times New Roman", serif; /* Tipografia serif tradicional */
+    line-height: 1.7; /* Altura da linha para tornar leitura mais confortável */
+}
+
+.container {
+    max-width: 900px; /* Largura máxima do conteúdo central */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 30px; /* Espaçamento interno da caixa */
+    background-color: #fff; /* Fundo branco do card */
+    border: 1px solid #e2d8c5; /* Borda discreta em bege */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12); /* Sombra suave para profundidade */
+    border-radius: 12px; /* Bordas arredondadas */
+}
+
+h1, h2, h3 {
+    color: #3f2f20; /* Cor dos títulos escura e elegante */
+    font-family: "Palatino", "Georgia", serif; /* Fonte de títulos serif sofisticada */
+    margin-top: 1.2em; /* Espaço acima de cabeçalhos */
+    margin-bottom: 0.4em; /* Espaço abaixo de cabeçalhos */
+}
+
+header h1 {
+    font-size: 2.4rem; /* Tamanho grande para título principal */
+    margin-bottom: 0.1em; /* Pequeno espaço abaixo do título */
+}
+
+header p {
+    color: #6b5a48; /* Cor secundária do subtítulo */
+    font-style: italic; /* Estilo itálico para aparência narrativA */
+    letter-spacing: 0.02em; /* Espaçamento entre letras levemente maior */
+    margin-bottom: 2rem; /* Distância antes do conteúdo principal */
+}
+
+.biography-intro {
+    border-left: 4px solid #b68a61; /* Barra vertical de destaque */
+    padding-left: 1rem; /* Espaço entre barra e texto */
+    color: #4e3b2f; /* Texto da introdução mais escuro */
+    background-color: #f9f3ec; /* Fundo claro suave para o bloco */
+    margin-bottom: 1.5rem; /* Separação abaixo da introdução */
+}
+
+.section {
+    margin-bottom: 1.6rem; /* Espaço entre seções */
+}
+
+.section strong {
+    color: #5b4735; /* Destaque de texto forte em seções */
+}
+
+img.profile {
+    width: 160px; /* Largura fixa da foto */
+    height: 160px; /* Altura fixa da foto */
+    object-fit: cover; /* Corta e preenche mantendo proporção */
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 4px solid #d9c4aa; /* Moldura estilo biografia */
+    float: right; /* Posiciona foto à direita do texto */
+    margin: 0 0 1rem 1rem; /* Espaço ao redor da imagem */
+}
+
+p {
+    text-align: justify; /* Texto justificado para aparência de livro */
+}
+
+ul.timeline {
+    padding-left: 1.1rem; /* Espaço interno à esquerda para marcador */
+    list-style: none; /* Remove marcadores padrão */
+    border-left: 2px solid #e6d7c4; /* Linha vertical para efeito de timeline */
+    margin-top: 0.6rem; /* Espaço acima da lista */
+}
+
+ul.timeline li {
+    padding: 0.75rem 0 0.75rem 1rem; /* Espaçamento interno dos itens */
+    margin-bottom: 0.6rem; /* Espaço entre itens */
+    position: relative; /* Torna o pseudo-elemento posicionável */
+}
+
+ul.timeline li:before {
+    content: ""; /* Cria um ponto na linha de timeline */
+    position: absolute; /* Posiciona em relação ao pai */
+    left: -8px; /* Desloca para fora à esquerda do item */
+    top: 0.8rem; /* Alinha verticalmente no centro aproximado */
+    width: 14px; /* Largura do ponto */
+    height: 14px; /* Altura do ponto */
+    background: #b68a61; /* Cor do ponto */
+    border-radius: 50%; /* Ponto circular */
+}
+
+footer {
+    text-align: center; /* Centraliza conteúdo do rodapé */
+    color: #7b6a57; /* Cor de texto mais suave */
+    font-size: 0.9rem; /* Fonte menor para rodapé */
+    margin-top: 2rem; /* Espaço acima do rodapé */
+    border-top: 1px solid #e2d8c5; /* Linha superior de separação */
+    padding-top: 1rem; /* Espaçamento interno no topo */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Menos padding em telas pequenas */
+    }
+    img.profile {
+        float: none; /* Remove float em mobile */
+        margin: 0 auto 1rem; /* Centraliza imagem */
+        display: block; /* Para centralização funcionar */
+    }
+}
